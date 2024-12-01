@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 body{
-    ffont-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .navbar{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
     padding: 25px;
     background-color: chocolate;
     color: white
 }
 
+.logo{
+    align-self: center;
+}
 
 .nav-links{
     list-style: none;
