@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Mi Cafetería</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -13,119 +16,137 @@
                 <h1>Mi Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li> <a href="#">Inicio</a> </li>
+                <li> <a href="#" onclick="redirigir('menu.html')">Menú</a> </li>
+                <li> <a href="#equipo">Nosotros</a> </li>
+                <li> <a href="#">Contacto</a> </li>
             </ul>
         </nav>
     </header>
+
     <section class="hero">
         <div class="hero-content">
-            <h2>Cafe de la sierra</h2>
+            <h2>El mejor café de la ciudad</h2>
             <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <button>Ver Menú</button>
+            <div class="contenedor-boton">
+                <button class="boton-menu">Ver Menú</button>
+            </div>
         </div>
     </section>
+
     <section class="featured-products">
         <h2>Nuestros productos destacados</h2>
         <div class="product-list">
             <div class="product">
-                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_isut_9C97XMcDRCBFFeVSpljaCR1PEkBhu_C4CDjab9lb6y884H1WYyG6fVAytsfG1Wwk9V56TsaTqJkRvcoUd6gb8oJdKYtnfNXjG0" alt="Café 1">
+                <img src="https://cafeteriaamel.weebly.com/uploads/3/8/9/2/38923501/s551748769911295462_p1_i1_w598.jpeg"
+                    alt="Café 1">
                 <h3>Café Americano</h3>
                 <p>Un clásico para comenzar el día.</p>
             </div>
-
             <div class="product">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Cappuccino_PeB.jpg/1200px-Cappuccino_PeB.jpg" alt="Café 2">
+                <img src="https://www.elglobo.com.mx/cdn/shop/products/cappuccino-2_1200x.jpg?v=1618806745"
+                    alt="Café 2">
                 <h3>Cappuccino</h3>
                 <p>Espresso con leche cremosa.</p>
             </div>
-
             <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOqmVxvmCpnj5O96MWOs_6bNYO5b5sLSDCVw&s" alt="Café 3">
+                <img src="https://www.malongo.com/wp-content/uploads/2024/02/site-malongo-5-1024x614.jpg" alt="Café 3">
                 <h3>Latte Macchiato</h3>
                 <p>Espresso con leche al vapor.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="postres">
+        <h2>Nuestros Deliciosos Postres</h2>
+        <div class="grid-container">
+            <div class="postre">
+                <img src="https://fedecocina.net/imagenes/16x9/chocoflan-o-pastel-imposible.jpg"
+                    alt="Foto del chocoflan-o-pastel-imposible">
+                <h3>Choco Flan o pastel imposible</h3>
+                <p>"Que los unico imposible sea no volver o comer otra rebanada".
+                    Disfruta cada momento</p>
+            </div>
             
+            <div class="postre">
+                <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/4c5afa85b2d23807e8669d4c53e550a4.jpg"
+                    alt="Foto del Cheesecake">
+                <h3>Cheesecake de chocolate</h3>
+                <p>para esos gustos culposos
+                </p>
+            </div>
+            <div class="postre">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxEQ-_fKLRr5A3WnpZxp-wkiAjvHjpTm5b7A&s"
+                    alt="Cupcake">
+                <h3>Cupcake</h3>
+                <p>La risa es como el postre, para ella siempre hay un hueco</p>
+            </div>
+            <div class="postre">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/3edd78103ea1bb25b19b5e202a5fd7e7.jpg" alt="Ml hojas">
+                <h3>Mil Hojas</h3>
+                <p>La vida es muy corta para dejar el postre al final</p>
+            </div>    
+            <div class="postre">
+                <img src="https://www.cocinadelirante.com/800x600/filters:format(webp):quality(75)/sites/default/files/images/2024/09/como-hacer-el-pay-de-limon-helado-estilo-vips-con-leche-condensada.jpg">
+                <h3>Pay de limon</h3>
+                <p>Si la vida te da limones has pay de limon</p>
 
-            <section class="postres">
-                <h2>Nuestros deliciosos postres</h2>
-                <div class="grid-container">
-                    <div class="postre">
-                        <img src="https://www.monchys.com/cdn/shop/products/Pequito_flan.jpg?v=1676396649&width=360" alt="pequito-choco-flan">
-                        <h3>Choco Flan</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, modi? Incidunt voluptate provident enim dicta inventore, esse nesciunt vero aut itaque nulla veritatis molestias harum ullam adipisci similique autem quod.</p>
-                    </div>
-                    <div class="postre">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFThI7Qhe1cUKhB5-ZXQUqgzcgGH6A1F8lQ&s">
-                        <h3>Cheesecake de Chocolate</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam incidunt aliquid! Nihil, commodi aspernatur quam quasi quia ab odio harum, blanditiis minus obcaecati recusandae veniam suscipit? Iste, quibusdam excepturi?</p>
-                    </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="postre">
-                        <img src="https://images.mrcook.app/recipe-image/01913e02-f572-7a79-ba47-0d82218105fc">
-                        <h3>Cupcakes</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam incidunt aliquid! Nihil, commodi aspernatur quam quasi quia ab odio harum, blanditiis minus obcaecati recusandae veniam suscipit? Iste, quibusdam excepturi?</p>
-                    </div>
+    <section id="equipo" class="equipo">
+        <h2>Nuestro Equipo</h2>
 
-                    <div class="postre">
-                        <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/3edd78103ea1bb25b19b5e202a5fd7e7.jpg">
-                        <h3>Mil Hojas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam incidunt aliquid! Nihil, commodi aspernatur quam quasi quia ab odio harum, blanditiis minus obcaecati recusandae veniam suscipit? Iste, quibusdam excepturi?</p>
-                    </div>                
+        <div class="equipo-container">
 
-                    <div class="postre">
-                        <img src="https://www.cocinadelirante.com/800x600/filters:format(webp):quality(75)/sites/default/files/images/2024/09/como-hacer-el-pay-de-limon-helado-estilo-vips-con-leche-condensada.jpg">
-                        <h3>Pay de limon</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis doloremque non placeat quas architecto ut illo nisi, eligendi necessitatibus. Quisquam iure omnis repellendus laudantium perspiciatis laborum vitae animi esse?</p>
+            <div class="miembro">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBEUBChMhWvPyc1R4anWaTT_XQmL5eufUXTA&s"
+                    alt="">
+                <h3>Luis</h3>
+                <p>Chef Principal</p>
+            </div>
 
-                    </div>
-                </div>
+            <div class="miembro">
+                <img src="https://i.pinimg.com/736x/80/6c/01/806c01b70ba2a417f51306e429ab2533.jpg" alt="">
+                <h3>Miriam</h3>
+                <p>Barista</p>
+            </div>
 
-            </section>
-      </div>
-            </section>
-<section class="equipo" >
-    <h2>Nuestro equipo</h2>
-    <div class="miembro">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvX2TmQdu9sOhoXQZlWLFpTtScSynbyURuzg&s" alt="">
-        <h3>luis</h3>
-        <p>Chef principal</p>
-    </div>
+            <div class="miembro">
+                <img src="https://img.freepik.com/vector-premium/chico-barista-lindo-chibi-kawaii-personaje-mascota-diseno-tienda-cafe-logotipo-estilo-contorno_1213365-1289.jpg"
+                    alt="">
+                <h3>Jorge</h3>
+                <p>Mesero</p>
+            </div>
 
-    <div class="miembro">
-        <img src="https://i.pinimg.com/474x/2b/84/b0/2b84b045ac744dda9e2690ad87185f48.jpg" alt="">
-        <h3>Miryan</h3>
-        <p>Ayudante de Chef</p>
-    </div>
-
-    <div class="miembro">
-        <img src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-camarero-dibujado-mano_23-2150721476.jpg" alt="">
-        <h3>angel</h3>
-        <p>Mesero</p>
-    </div>
-
-</section>
+            <div class="miembro">
+                <img src="https://static.vecteezy.com/system/resources/previews/048/755/623/non_2x/cute-barista-girl-chibi-kawaii-character-mascot-design-shop-coffee-cafe-logo-outline-style-vector.jpg" alt="">
+                <h3>Angelica</h3>
+                <p>Mesera</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-container"></div>
-        <div class="redes-sociales">
-            <a href="#"><i class="fab fa-facebook"></i></a>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="newsletter">
+                <h3>Suscribete a nuestras promociones</h3>
+                <form>
+                    <input type="email" placeholder="Ingresa tu correo electronico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+            <p>&copy Realizado por Oscar <A class="D"></A></p>
         </div>
-        <div class="newletter">
-            <h3>Recibe promociones</h3>
-        <form action="">
-            <input type="email" placeholder="ingresa tu correo" required>
-            <button type="submit">Suscribirse</button>
-        </form>
-        <p>Creado por Oscar AD</p>
-        </div>
-        
     </footer>
+
+    <!--Enlazando archivo de JavaScript-->
+    <script src="main.js"></script>
 </body>
 </html>

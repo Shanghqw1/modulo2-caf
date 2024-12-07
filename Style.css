@@ -148,6 +148,40 @@ footer{
     position: relative;
 }
 
+.social-media{
+    color: aqua;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.newsletter{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.newsletter input[type="email"]{
+padding: 8px;
+border: 2px solid yellow;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+.newsletter button[type="subit"]{
+    background-color: aquamarine;
+    color: beige;
+    padding: 8px 16px;
+    border: none;
+}
+
+
+.grid-pasteles(
+    display: grid;
+    
+
+)    
+
+
 
 img{
     border-radius: 80%;
