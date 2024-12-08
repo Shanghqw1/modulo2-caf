@@ -179,11 +179,13 @@ border-radius: 8px;
 margin-bottom: 10px;
 }
 
-.newsletter button[type="subit"]{
-    background-color: aquamarine;
-    color: rgb(10, 189, 189);
+.newsletter button[type="submit"]{
+    background-color: rgb(15, 7, 134);
+    color:white;
     padding: 8px 16px;
     border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 
