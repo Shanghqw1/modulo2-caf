@@ -70,6 +70,7 @@ body{
 .hero h2{
     font-size: 3rem;
     margin-bottom: 20px;
+
 }
 
 .contenedor-boton{
@@ -195,10 +196,23 @@ margin-bottom: 10px;
     cursor: pointer;
 }
 
+.pasteles{
+    padding: 50px,;
+    text-align: center;
+}
+
 .grid-pasteles{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas: 
+    "pastel1 pastel1 pastel2 pastel3"
+    "pastel1 pastel1 pastel4 pastel5"
+}
+
+.pastel{
+    border: 1px solid black;
 }
 
 .pasteles img{
@@ -207,3 +221,9 @@ margin-bottom: 10px;
     object-fit: cover;
     margin-bottom: 12px;
 }
+
+.pastel:nth-child(1) {grid-area: pastel1;}
+.pastel:nth-child(2) {grid-area: pastel2;}
+.pastel:nth-child(3) {grid-area: pastel3;}
+.pastel:nth-child(4) {grid-area: pastel4;}
+.pastel:nth-child(5) {grid-area: pastel5;}
