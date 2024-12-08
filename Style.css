@@ -75,6 +75,7 @@ body{
 .boton-menu{
     margin:15px;
     padding: 5px;
+    background-color:chocolate;
     }
 
 /*Seccion de productos*/
@@ -147,6 +148,7 @@ footer{
     text-align: center;
     padding: 1rem;
     position: relative;
+    
 }
 
 .footer-container{
