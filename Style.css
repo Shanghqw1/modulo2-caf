@@ -115,10 +115,10 @@ body{
 
 
 
-.product, .equipo:hover{
+.product:hover{
     background-color: rgb(0, 195, 255);
     transform: scale(1.05) rotate(3deg);
-    
+    cursor: pointer;
 }
 
 /*postres*/
@@ -274,3 +274,52 @@ margin-bottom: 10px;
 .bebida:nth-child(3) {grid-area: bebida3;}
 .bebida:nth-child(4) {grid-area: bebida4;}
 .bebida:nth-child(5) {grid-area: bebida5;}
+
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .product, .postre, .bebida, .miembro {
+        max-width: 100%;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .hero-content {
+        padding: 2rem;
+    }
+    .product-list, .grid-container, .grid-bedidas, .equipo-container {
+        gap: 1.5rem;
+    }
+    .product, .postre, .bebida, .miembro {
+        max-width: 45%;
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .product-list, .grid-container, .grid-bedidas, .equipo-container {
+        gap: 2rem;
+    }
+    .product, .postre, .bebida, .miembro {
+        max-width: 200px;
+    }
+}
