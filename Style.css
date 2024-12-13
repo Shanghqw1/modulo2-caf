@@ -136,7 +136,11 @@ body{
     border-top-left-radius: 20%;
 }
 
-
+.video{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
 
 .equipo{
     background-color: antiquewhite;
@@ -295,7 +299,7 @@ margin-bottom: 10px;
     }
 }
 
-/* Pantallas medianas (tabletas) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -311,7 +315,7 @@ margin-bottom: 10px;
     }
 }
 
-/* Pantallas grandes (escritorios) */
+
 @media (min-width: 1025px) {
     .navbar {
         justify-content: space-between;
